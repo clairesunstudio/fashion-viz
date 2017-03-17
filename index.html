@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fashion</title>
+	<script src="common/modernizr.js"></script>
+ 	<script src="common/jquery-1.11.1.min.js"></script>
+ 	<script src="common/tabletop.js"></script>
+ 	<link type="text/css" rel="stylesheet" href="index.css">
+
+<style>
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="top"><h1>THE FASHION OF HITCHCOCK'S 7 LEADING LADIES</h1></div>
+<div class="gallery">
+<!-- rear window -->
+<div class="row">
+<div class="title"><h2>GRACE KELLY</h2><h3>Rear Window | 1954</h3><h3>Character: Lisa</h3>
+<p>She played as the socialite girlfriend to Stewart's wheelchair-bound photojournalist who plays along with his idea that one of his neighbors killed his wife.</p></div>
+	<div class='container one'></div>
+<div class="title"><h2>TIPPI HEDREN</h2><h3>The Birds | 1963</h3><h3>Character: Melanie</h3>
+<p>She was a wealthy young socialite who travels to a seaside California town in pursuit of a new beau, only to find herself among the townspeople being pecked to death by swarms of seagulls.</p></div>
+	<div class='container two'></div>
+<div class="title"><h2>JANET LEIGH</h2><h3>Psycho | 1960</h3><h3>Character: Marion</h3>
+<p>In Psycho, she played Marion Crane, a secretary who embezzles $40,000 from her employer in order to free her lover from debt.</p></div>
+	<div class='container three'></div>
+<div class="title"><h2>JOAN FONTAINE</h2><h3>Suspicion | 1941</h3><h3>Character: Lina</h3>
+<p>In Suspicion, she played as the naive wife, marrying a charming man after a brief romance, only to suspect that he is after her money and wants to kill her.</p></div>
+	<div class='container four'></div>
+<div class="title"><h2>KIM NOVAK</h2><h3>Vertigo | 1958</h3><h3>Character: Judy & Madeleine </h3>
+<p>She plays a dual role of Judy Barton/Madeleine Elster, who becomes the sole obsession of scrophobic police detective John Ferguson. Madeline is obsessed with her own death. Ferguson helps her save her life.</p></div>
+	<div class='container five'></div>
+<div class="title"><h2>EVA MARIE SAINT</h2><h3>On The Waterfront | 1951</h3><h3>Character: Edie</h3>
+<p>She plays a Catholic teacher-in-training who falls for Terry Malloy. Not familiar with the lifestyle on the waterfront, she exhibits bravery by choosing to stick around through a dangerous time. An almost angelic gentle soul who often rescues stray animals, she sees the good in Terry that nobody else sees. </p></div>
+	<div class='container six'></div>
+<div class="title"><h2>INGRID BERGMAN</h2><h3>Spellbound | 1945</h3><h3>Character: Constance</h3>
+<p>She was a psychoanalyst who falls in love with her new boss and learns that he's a troubled amnesiac and possibly even a killer. </p></div>
+	<div class='container seven'></div>
+
+</div>
+
+
+</div>
+
+    <div class='modal'></div>
+    <div class='overlay'></div>
+
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer  data-pin-color="white" data-pin-height="22" data-pin-hover="true" src="http://assets.pinterest.com/js/pinit.js"></script>
+
+
+<script>
+
+$container7 = $(".seven");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item onTheWaterfront").attr("data-order", i);
+  //add color bar
+  if(i < 26) {
+    $img.addClass("brown").attr("data-color", "brown");
+  } else if(i < 73) {
+    $img.addClass("white").attr("data-color", "white");
+  } else {
+    $img.addClass("grey").attr("data-color", "grey");
+  }
+  $container7.append($img);
+}
+
+
+var idx7 = 0;
+$(".onTheWaterfront").each(function() {
+    $(this).css({left: idx7 * 15});
+    $(this).css("background-image", "url("+"images/onTheWaterfront/"+(idx7%11+1)+".jpg)");
+    idx7++;
+});
+
+
+$container6 = $(".six");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item spellbound").attr("data-order", i);
+  //add color bar
+  if(i < 46) {
+    $img.addClass("white").attr("data-color", "white");
+
+  } else {
+    $img.addClass("grey").attr("data-color", "grey");
+  }
+  $container6.append($img);
+}
+
+
+var idx6 = 0;
+$(".spellbound").each(function() {
+    $(this).css({left: idx6 * 15});
+    $(this).css("background-image", "url("+"images/spellbound/"+(idx6%9+1)+".jpg)");
+    idx6++;
+});
+
+
+$container5 = $(".five");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item vertigo").attr("data-order", i);
+  //add color bar
+  if(i < 40) {
+    $img.addClass("blue").attr("data-color", "blue");
+  } else if(i < 48) {
+    $img.addClass("teal").attr("data-color", "teal");
+  } else if(i < 55) {
+    $img.addClass("grey").attr("data-color", "grey");
+  } else if(i < 67) {
+    $img.addClass("white").attr("data-color", "white");
+  } else {
+    $img.addClass("maroon").attr("data-color", "maroon");
+  }
+  $container5.append($img);
+}
+
+
+var idx5 = 0;
+$(".vertigo").each(function() {
+    $(this).css({left: idx5 * 15});
+    $(this).css("background-image", "url("+"images/vertigo/"+(idx5%8+1)+".jpg)");
+    idx5++;
+});
+
+
+$container4 = $(".four");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item suspicion").attr("data-order", i);
+  //add color bar
+  if(i < 20) {
+    $img.addClass("white").attr("data-color", "white");
+
+  } else {
+    $img.addClass("grey").attr("data-color", "grey");
+  }
+  $container4.append($img);
+}
+
+
+var idx4 = 0;
+$(".suspicion").each(function() {
+    $(this).css({left: idx4 * 15});
+    $(this).css("background-image", "url("+"images/suspicion/"+(idx4%12+1)+".jpg)");
+    idx4++;
+});
+
+$container3 = $(".three");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item psycho").attr("data-order", i);
+  //add color bar
+  if(i < 60) {
+    $img.addClass("white").attr("data-color", "white");
+
+  } else {
+    $img.addClass("grey").attr("data-color", "grey");
+  }
+  $container3.append($img);
+}
+
+
+var idx3 = 0;
+$(".psycho").each(function() {
+    $(this).css({left: idx3 * 15});
+    $(this).css("background-image", "url("+"images/psycho/"+(idx3%9+1)+".jpg)");
+    idx3++;
+});
+
+
+$container2 = $(".two");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item theBirds").attr("data-order", i);
+//add color bar
+  if(i < 26) {
+    $img.addClass("green").attr("data-color", "green");
+
+  } else if(i < 46) {
+    $img.addClass("grey").attr("data-color", "grey");
+  } else if(i < 56) {
+    $img.addClass("white").attr("data-color", "white");
+  } else {
+    $img.addClass("red").attr("data-color", "red");
+  }
+  $container2.append($img);
+}
+
+
+var idx2 = 0;
+$(".theBirds").each(function() {
+    // $(this).css("background-image", "url("+"images/theBirds/"+(idx2%13+1)+".jpg)");}
+    $(this).css({left: idx2 * 15});
+    if(idx2<26){
+      for(var i=0;i<5;i++){
+        $(this).css("background-image", "url("+"images/theBirds/"+((idx2)%5+1)+".jpg)");
+      }; i-=5;  }
+    else if(idx2<46){
+    $(this).css("background-image", "url("+"images/theBirds/"+((idx2-(25-6))%3+6)+".jpg)");}
+    else if(idx2<56){
+    $(this).css("background-image", "url("+"images/theBirds/"+((idx2-(45-9))%3+9)+".jpg)");}
+    else{
+      for(var i=0;i<1;i++){
+        $(this).css("background-image", "url("+"images/theBirds/"+((idx2-(55-12))%2+12)+".jpg)"); //(idx2-(55-12))%2+12
+        //(idx-difference(first-firstimg#)%#+firstimg#
+      }; i-=5;
+    }
+    idx2++;
+});
+
+function randomNumbers(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+$container1 = $(".one");
+for(var i = 0; i < 82; i++){
+  $img = $("<div>").addClass("item rear-window").attr("data-order", i);
+  // var $scale = $("<div>").addClass("scale");
+  if(i < 17) {
+    // $scale.addClass("white");
+    $img.addClass("white").attr("data-color", "white");
+  } else if(i < 28) {
+    $img.addClass("grey").attr("data-color", "grey");
+  } else if(i < 53) {
+    $img.addClass("green").attr("data-color", "green");
+  } else if(i < 60) {
+    $img.addClass("pink").attr("data-color", "pink");
+  } else {
+    $img.addClass("orange").attr("data-color", "orange");
+  }
+  // $img.append($scale);
+  $container1.append($img);
+}
+
+
+var idx1 = 1;
+$(".rear-window").each(function() {
+    $(this).css({left: (idx1-1) * 15});
+    $(this).css("background-image", "url("+"images/rear-Window/"+idx1+".png)");
+    idx1++;
+});
+
+
+
+$(".item").on("mouseover",function(e) {
+		var current = $(this).data().order;
+		var leftdif = ((current/81)*200)/current;
+		var rightdif = (200-((current/81)*200))/(80-current);
+		var wid = 15-(200-15)/81;
+
+		$(".item").css({"width": "15px", "-webkit-transform": "translate(0,0)"})
+		$(this).css({"width": "215px",  "-webkit-transform": "translate(-"+(current/81)*200+"px,0)"});
+		$(this).prevAll(".item").each(function() {$( this ).css({"width": wid+"px", "-webkit-transform": "translate(-"+$(this).data().order*leftdif+"px,0)"});});
+		$(this).nextAll(".item").each(function() {$( this ).css({"width": wid+"px", "-webkit-transform": "translate("+(81-$(this).data().order)*rightdif+"px,0)"});});
+		console.log(current);
+});
+
+$(".item").mouseout(function(e) {
+	$(".item").css({"width": "15px", "-webkit-transform": "translate(0,0)"});
+});
+
+
+
+
+
+
+
+$(".item").on("click", function(){
+	var detail = "images/rear_Window/"+($(this).data().order+1)+".png";
+	showModal(detail,$(this).data().color);
+	console.log(detail);
+})
+
+var $data = [];
+
+window.onload = function() { init() };
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1O0mMFd3U2E4N1BRsF6jNBSTMhG-lVrQwiyAg2tT4NDk&output=html';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    console.log(data);
+    $data = data;
+  }
+
+
+
+function showModal(detail,set) {
+
+
+// (function(d){
+//     var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+//     p.type = 'text/javascript';
+//     p.async = true;
+//     p.src = 'http://assets.pinterest.com/js/pinit.js';
+//     f.parentNode.insertBefore(p, f);
+//     p.setAttribute('data-pin-hover', true);
+// }(document));
+
+
+   $(".modal").empty();
+   //left div
+   var $img = $("<img>").attr("src",detail).addClass("detail");
+   $img.attr("nopin","nopin");
+   var $div = $("<div>");
+   $div.append($img);
+
+
+   //right section
+
+   var $section = $('<div>').addClass("section");
+   var $title = $('<div>').addClass("description");
+   var $figure1 = $("<figure>");
+   var $png1 = $("<img>").attr("src","images/items/"+set+"/1.png").addClass("png").attr('data-pin-hover', "true");
+   var $figure2 = $("<figure>");
+   var $png2 = $("<img>").attr("src","images/items/"+set+"/2.png").addClass("png")
+   var $figure3 = $("<figure>");
+   var $png3 = $("<img>").attr("src","images/items/"+set+"/3.png").addClass("png")
+
+
+   console.log(set);
+   switch (set) {
+    case "white":
+        var i = 0;
+        break;
+    case "grey":
+        var i = 1;
+        break;
+    case "green":
+        var i = 2;
+        break;
+    case "pink":
+        var i = 3;
+        break;
+    case "orange":
+        var i = 4;
+        break;
+	}
+   var $text = $("<h4>").text($data[i].description);
+   var $caption1 = $("<figcaption>").html($data[i].cap1+"<br/><span>"+$data[i].by1+"</span>");
+   var $caption2 = $("<figcaption>").html($data[i].cap2+"<br/><span>"+$data[i].by2+"</span>");
+   var $caption3 = $("<figcaption>").html($data[i].cap3+"<br/><span>"+$data[i].by3+"</span>");
+
+   // var $pinterest1 = $("<a>").attr("href","https://www.pinterest.com").attr("data-pin-do", "buttonPin").attr("data-pin-config","above").attr("data-pin-hover","true");
+   // var $pinterest2 = $("<a>").attr("href","https://www.pinterest.com").attr("data-pin-do", "buttonPin").attr("data-pin-config","above");
+   // var $pinterest3 = $("<a>").attr("href","https://www.pinterest.com").attr("data-pin-do", "buttonPin").attr("data-pin-config","above");
+ //   .attr({
+ //   .attr({
+ //   	href: "https://www.pinterest.com",
+ //    data-pin-do: "buttonPin",
+ //    data-pin-config:"above"
+	// });
+
+   // var $button1 = $("<img>").attr("src","http://assets.pinterest.com/images/pidgets/pin_it_button.png");
+   // var $button2 = $("<img>").attr("src","http://assets.pinterest.com/images/pidgets/pin_it_button.png");
+   // var $button3 = $("<img>").attr("src","http://assets.pinterest.com/images/pidgets/pin_it_button.png");
+
+
+   // $pinterest1.append($button1);
+   //   $pinterest2.append($button2);
+   //     $pinterest3.append($button3);
+
+
+   $title.append($text);
+   $figure1.append($png1).append($caption1);
+   $figure2.append($png2).append($caption2);
+   $figure3.append($png3).append($caption3);
+
+   // $figure1.append($pinterest1);
+   // $figure2.append($pinterest2);
+   // $figure3.append($pinterest3);
+
+
+   var $li1 = $("<li>");
+   var $li2 = $("<li>");
+   var $li3 = $("<li>");
+
+$figure1.addClass("pinterest-image");
+$figure2.addClass("pinterest-image");
+$figure3.addClass("pinterest-image");
+
+
+   $li1.append($figure1);
+   $li2.append($figure2);
+   $li3.append($figure3);
+
+// var items=[];
+// $(data).each(function(index, Element) {
+//     items.push($('<li/>').text(Element.title));
+// });
+// $('#my_list').append.apply($('#my_list'), items);
+
+   var $ul = $("<ul>");
+   $ul.append($li1).append($li2).append($li3);
+
+   // for(var i=0; i<3; i++){
+   // $ul.append($li);}
+
+
+   $section.append($title).append($ul);
+
+   $(".modal").append($div).append($section);
+   // $(".overlay").append($close);
+
+   $(".overlay").show();
+   $(".modal").show();
+
+     $('html, body').addClass("fixed");
+
+}
+
+function hideModal() {
+
+  $(".overlay").hide();
+  $(".modal").hide();
+}
+
+$(".overlay").on("click",function(e) {
+      hideModal();
+      $('html, body').removeClass("fixed");
+  });
+
+
+
+$(document).ready(function() {
+  var $hover = $("<div>").addClass("hover-pinterest");
+  // $('.hover-pinterest').append('<a class="pin-it-link" target="_blank"></a>');
+  $('.pinterest-image img').append($hover).append('<a class="pin-it-link" target="_blank"></a>');
+  $('.pinterest-image').hover(
+    function() {
+      var imgurl = jQuery('img', this).attr('src');
+      var encodedurl = encodeURIComponent(imgurl);
+      var pathname = jQuery(location).attr('href');
+      url = encodeURIComponent(pathname);
+      var desc = encodeURIComponent('Fashion Style From Rear Window');
+      var pinhref = 'http://pinterest.com/pin/create/button/?url=';
+      pinhref += url;
+      pinhref += '&media=';
+      pinhref += encodedurl;
+      pinhref += '&description=';
+      pinhref += desc;
+      jQuery('.hover-pinterest a',this).attr('href',pinhref);
+      var pinwidth = jQuery(this).width();
+      var pinheight = jQuery(this).height();
+      jQuery('.hover-pinterest',this).css('display','block');
+      jQuery('.hover-pinterest',this).css('width',pinwidth);
+      jQuery('.hover-pinterest',this).css('height',pinheight);
+    },function() {
+      jQuery('.hover-pinterest',this).css('display','none');
+    });
+});
+
+// Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1uve3-Viu9SlwqwBR3__BGc6b18uNmNEW1RppZVq0FWs/pubhtml?gid=0&single=true",
+//                    callback: callback,
+//                    simpleSheet: true } )
+
+
+
+</script>
+
+</body>
+</html>
